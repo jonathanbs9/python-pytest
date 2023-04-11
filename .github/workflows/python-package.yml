@@ -24,4 +24,4 @@ jobs:
       run: |
         pip install pytest
         export PYTHONPATH=tests
-        pytest -v tests/test_accum.py
+        pytest -v test/test_accum.py
