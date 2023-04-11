@@ -18,7 +18,7 @@ pipeline{
 
         stage('Ejecución de Test'){
             steps{
-                echo '...::::: Executing test & report generation :::::...'
+                echo '...:::::::: Executing test & report generation ::::::::...'
                 bat 'python -m  pytest -v test/test_accum.py --html=report.html'
             }
         }
