@@ -1,4 +1,4 @@
-# python-pytest
+# python-pytest [![Python Package using Conda](https://github.com/jonathanbs9/python-pytest/actions/workflows/python-package-conda.yml/badge.svg)](https://github.com/jonathanbs9/python-pytest/actions/workflows/python-package-conda.yml)
 
 Help
 
