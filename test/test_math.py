@@ -1,5 +1,5 @@
 """ 
-This module contains  basic unit tests for math operations.
+This module contains  basic unit test for math operations.
 Their purpose is to show how to use the pytest framework by example.
 """
 # ----------

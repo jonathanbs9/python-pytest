@@ -1,5 +1,5 @@
 """
-This module contains basis REST API tests using 'requests'.
+This module contains basis REST API test using 'requests'.
 Their purpose is to show how to use the pytest framework by example
 """
 

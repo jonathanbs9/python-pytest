@@ -1,6 +1,6 @@
 # Chapter 5 - Testing Classes
 """
-This module contains basic unit tests for the accum module.
+This module contains basic unit test for the accum module.
 Their purpose is to show how to use the pytest framework by example.
 """
 
