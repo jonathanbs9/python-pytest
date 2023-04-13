@@ -4,19 +4,32 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-latest'
+strategy:
+  Python39:
+    python.version: '3.9'
+
 
 steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '$(python.version)'
+  displayName: 'Use Python Version $(python.version)
+  '
 - script: |
     python3 -m venv env
     source env/bin/activate
-    python3 -m pip install --upgrade pip
     python3 pip install pytest
     python3 -m pip install --upgrade pip
 # pip install -r requirements.txt
   displayName: 'Configurar el entorno virtual e instalar dependencias'
 
 - script: |
-    python3 -m pytest -v test/test_accum.py
+    pip install pytest pytest-azurepipelines
+    pytest
+  displayName: 'pytest'
+
+- script: |
+    pytest -v test/test_accum.py
   displayName: 'Ejecutar pruebas'
 
 # Opcionalmente, añade un paso para publicar los resultados de las pruebas
