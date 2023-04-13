@@ -16,7 +16,7 @@ steps:
   displayName: 'Configurar el entorno virtual e instalar dependencias'
 
 - script: |
-    pytest test/test_accum.py
+    python3 -m pytest -v test/test_accum.py
   displayName: 'Ejecutar pruebas'
 
 # Opcionalmente, añade un paso para publicar los resultados de las pruebas
