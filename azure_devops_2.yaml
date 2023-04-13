@@ -24,12 +24,8 @@ steps:
 
 - script: |
     pip install pytest pytest-azurepipelines
-    pytest
-  displayName: 'pytest'
-
-- script: |
     pytest -v test/test_accum.py
-  displayName: 'Ejecutar pruebas'
+  displayName: 'Ejecucion de pruebas'
 
 # Opcionalmente, añade un paso para publicar los resultados de las pruebas
 - task: PublishTestResults@2
