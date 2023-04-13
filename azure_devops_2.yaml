@@ -5,8 +5,9 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 strategy:
-  Python39:
-    python.version: '3.9'
+  matrix:
+    Python39:
+      python.version: '3.9'
 
 steps:
 - task: UsePythonVersion@0
